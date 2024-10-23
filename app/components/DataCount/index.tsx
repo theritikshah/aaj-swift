@@ -42,8 +42,8 @@ const index = () => {
         </p>
       </div>
       <div className="flex w-full gap-8 justify-between">
-        {data.map((data: any) => {
-          return <DataCard label={data.label} value={data.value} />;
+        {data.map((data: any, index: number) => {
+          return <DataCard key={index} label={data.label} value={data.value} />;
         })}
       </div>
     </div>

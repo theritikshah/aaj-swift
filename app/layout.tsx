@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Head } from "next/document";
 import Navbar from "./components/Navbar";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
