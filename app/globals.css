@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,12 +18,28 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  font-family: Manrope, sans-serif;
+  @apply text-gray
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.path-background {
+  stroke-dasharray: none; /* Background path does not animate */
+}
+
+.path {
+  stroke-dasharray: 4000; /* This value is dynamically set in JS */
+  stroke-dashoffset: 4000; /* This value is dynamically controlled by scroll */
+  transition: stroke-dashoffset 0.1s linear; /* Controls smoothness */
+}
+
+
+.custom-plus-color [class*="collapse-plus"]:before {
+  @apply text-red /* Change this to any color you want */
 }
