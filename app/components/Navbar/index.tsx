@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Button from "../common/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons/faLocationPin";

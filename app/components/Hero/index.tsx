@@ -3,7 +3,6 @@ import Button from "../common/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationArrow,
-  faWeight,
   faWeightHanging,
 } from "@fortawesome/free-solid-svg-icons";
 
