@@ -19,9 +19,7 @@ const Footer = () => {
           </p>
         </div>{" "}
         <div>
-          <span>
-            <FontAwesomeIcon icon={faline} />
-          </span>
+          <span>{/* <FontAwesomeIcon icon={faline} /> */}</span>
         </div>
       </div>
     </footer>
