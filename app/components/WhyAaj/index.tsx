@@ -52,6 +52,7 @@ const WhyAaj = () => {
       </div>
     </div>
   );
+  // git fix
 };
 
 export default WhyAaj;
