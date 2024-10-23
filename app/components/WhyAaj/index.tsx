@@ -45,8 +45,10 @@ const WhyAaj = () => {
           </p>
         </div>
         <div className="w-full items-center justify-center grid grid-cols-3 gap-6 ">
-          {data.map((details: any) => {
-            return <DataCard img={details.icon} label={details.title} />;
+          {data.map((details: any, index: any) => {
+            return (
+              <DataCard key={index} img={details.icon} label={details.title} />
+            );
           })}
         </div>
       </div>
