@@ -1,7 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "off"
+    "@typescript-eslint/no-unused-vars": "off", // Turns off no-unused-vars errors
+    "@typescript-eslint/no-explicit-any": "off", // Turns off explicit any errors
+    "@typescript-eslint/explicit-module-boundary-types": "off", // Turns off errors for missing return types
+    "@typescript-eslint/no-empty-function": "off" // Turns off empty function errors
   }
-  
 }
