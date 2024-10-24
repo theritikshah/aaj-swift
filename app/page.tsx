@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Hero from "./components/Hero";
 import CtaSection from "./components/CtaSection";
@@ -7,57 +8,72 @@ import CtaBanner from "./components/CtaBanner";
 import Button from "./components/common/Button";
 import WhyAaj from "./components/WhyAaj";
 import PanIndia from "./components/PanIndia";
-import SvgComponent from "./components/process";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
 import BlogSection from "./components/Blogs";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AAJ Swift | Logistics Solutions",
+  description:
+    "AAJ Swift provides reliable logistics solutions across India. Book regular consignments and explore our warehousing services.",
+};
+
 export default function Home() {
   return (
-    <div className="font-sans">
-      <Hero />
-      <CtaSection />
-      <DataCount />
-      <CustomerReviews />
-      <CtaBanner
-        imgUrl="/assests/aaj-cta-banner-work.png"
-        heading={
-          <>
-            Have Regular Consignments to Book? <br />
-            Become a Postpaid Client
-          </>
-        }
-      >
-        <Button className="btn-wide bg-white !text-red hover:bg-white hover:text-red">
-          Contact sales
-        </Button>
-        <Button className="btn-wide bg-white !text-red hover:bg-white hover:text-red">
-          Contact Support
-        </Button>
-      </CtaBanner>
+    <>
+      {/* Meta Information for SEO */}
 
-      <WhyAaj />
-      <PanIndia />
+      {/* Main Content */}
+      <div className="font-sans">
+        <Hero />
+        <CtaSection />
+        <DataCount />
+        <CustomerReviews />
+        <CtaBanner
+          imgUrl="/assests/aaj-cta-banner-work.png"
+          heading={
+            <>
+              Have Regular Consignments to Book? <br />
+              Become a Postpaid Client
+            </>
+          }
+        >
+          <Button className="btn-wide bg-white !text-red hover:bg-white hover:text-red">
+            Contact sales
+          </Button>
+          <Button className="btn-wide bg-white !text-red hover:bg-white hover:text-red">
+            Contact Support
+          </Button>
+        </CtaBanner>
 
-      {/* <SvgComponent /> */}
-      <BlogSection />
+        <WhyAaj />
+        <PanIndia />
 
-      <FAQ />
-      <CtaBanner
-        imgUrl="/assests/truck.png"
-        heading={
-          <>
-            Have Regular Consignments to Book ?<br />
-            Become a Postpaid Client
-          </>
-        }
-      >
-        <Button className="btn-wide bg-white !text-red hover:bg-white hover:text-red">
-          Contact Us
-        </Button>
-      </CtaBanner>
+        {/* Uncomment if you want to use SvgComponent */}
+        {/* <SvgComponent /> */}
 
-      <Footer />
-    </div>
+        <BlogSection />
+
+        <FAQ />
+
+        <CtaBanner
+          imgUrl="/assests/truck.png"
+          heading={
+            <>
+              Have Regular Consignments to Book ?<br />
+              Become a Postpaid Client
+            </>
+          }
+        >
+          <Button className="btn-wide bg-white !text-red hover:bg-white hover:text-red">
+            Contact Us
+          </Button>
+        </CtaBanner>
+
+        <Footer />
+      </div>
+    </>
   );
 }
