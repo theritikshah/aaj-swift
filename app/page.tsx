@@ -10,6 +10,7 @@ import PanIndia from "./components/PanIndia";
 import SvgComponent from "./components/process";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
+import BlogSection from "./components/Blogs";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <PanIndia />
 
       {/* <SvgComponent /> */}
+      <BlogSection />
 
       <FAQ />
       <CtaBanner
