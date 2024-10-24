@@ -8,9 +8,9 @@ type Props = {
 
 const CtaBanner = ({ heading, children, imgUrl }: Props) => {
   return (
-    <div className="pt-16 mb-16">
+    <div className="container pt-16 mb-16 w-full">
       <div
-        className="flex container overflow-hidden mx-auto flex-col rounded-2xl h-auto gap-6 p-12 !bg-right"
+        className="flex  overflow-hidden mx-auto flex-col rounded-2xl h-auto gap-6 p-12 !bg-right"
         style={{
           background: `linear-gradient(90deg, #C2202B 43.6%, rgba(194, 32, 43, 0.00) 100%),url(${imgUrl})`,
         }}

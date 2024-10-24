@@ -32,7 +32,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container mx-auto py-12 pb-2 px-4 mt-16">
+    <div className="container mx-auto py-12 pb-2 mt-16">
       <div className="flex">
         {/* Left Side */}
         <div className="w-1/3 pr-6">
